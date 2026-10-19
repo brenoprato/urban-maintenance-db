@@ -1,0 +1,121 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[BRASIL 2001]{brasil2001estatutocidade}
+\abntrefinfo{Brasil}{BRASIL}{2001}
+{BRASIL. \textbf{Lei n\textsuperscript{o} 10.257, de 10 de julho de 2001.
+  Regulamenta os arts. 182 e 183 da Constituição Federal, estabelece
+  diretrizes gerais da política urbana e dá outras providências}. Brasília,
+  DF: Presidência da República, 2001.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/leis/leis\_2001/l10257.htm}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[BRASIL 2017]{brasil2017lei13460}
+\abntrefinfo{Brasil}{BRASIL}{2017}
+{BRASIL. \textbf{Lei n\textsuperscript{o} 13.460, de 26 de junho de 2017.
+  Dispõe sobre participação, proteção e defesa dos direitos do usuário
+  dos serviços públicos da administração pública}. Brasília, DF:
+  Presidência da República, 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/\_ato2015-2018/2017/lei/l13460.htm}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[BRASIL. MINISTÉRIO DAS CIDADES. SECRETARIA NACIONAL DE SANEAMENTO
+  AMBIENTAL 2023]{snis2023drenagem}
+\abntrefinfo{SNIS}{SNIS}{2023a}
+{BRASIL. MINISTÉRIO DAS CIDADES. SECRETARIA NACIONAL DE SANEAMENTO AMBIENTAL.
+  \textbf{Diagnóstico Temático Drenagem e Manejo das Águas Pluviais Urbanas:
+  Visão Geral --- Ano de referência 2022}. Brasília, DF: SNIS, 2023.
+  Dispon{\'\i}vel em:
+  \url{https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[BRASIL. MINISTÉRIO DAS CIDADES. SECRETARIA NACIONAL DE SANEAMENTO
+  AMBIENTAL 2023]{snis2023residuos}
+\abntrefinfo{SNIS}{SNIS}{2023b}
+{BRASIL. MINISTÉRIO DAS CIDADES. SECRETARIA NACIONAL DE SANEAMENTO AMBIENTAL.
+  \textbf{Diagnóstico Temático Manejo de Resíduos Sólidos Urbanos: Visão
+  Geral --- Ano de referência 2022}. Brasília, DF: SNIS, 2023.
+  Dispon{\'\i}vel em:
+  \url{https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[Elmasri e Navathe 2019]{elmasri2019sistemas}
+\abntrefinfo{Elmasri e Navathe}{ELMASRI; NAVATHE}{2019}
+{ELMASRI, R.; NAVATHE, S.~B. \textbf{Sistemas de Banco de Dados}. 7. ed. São
+  Paulo: Pearson Education do Brasil, 2019.}
+
+\bibitem[Heuser 2009]{heuser2009projeto}
+\abntrefinfo{Heuser}{HEUSER}{2009}
+{HEUSER, C.~A. \textbf{Projeto de Banco de Dados}. 6. ed. Porto Alegre:
+  Bookman, 2009.}
+
+\bibitem[INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA
+  2024]{ibge2024censo2022malha}
+\abntrefinfo{IBGE}{IBGE}{2024a}
+{INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. \textbf{Censo Demográfico
+  2022: Malha de Setores Censitários definitivos}. Rio de Janeiro: IBGE, 2024.
+  Dispon{\'\i}vel em:
+  \url{https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA 2024]{ibge2024munic}
+\abntrefinfo{IBGE}{IBGE}{2024b}
+{INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. \textbf{Perfil dos
+  Municípios Brasileiros: Pesquisa de Informações Básicas Municipais
+  (MUNIC)}. Rio de Janeiro: IBGE, 2024. Dispon{\'\i}vel em:
+  \url{https://www.ibge.gov.br/estatisticas/sociais/saude/10586-pesquisa-de-informacoes-basicas-municipais.html}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA
+  2025]{ibge2025entorno}
+\abntrefinfo{IBGE}{IBGE}{2025}
+{INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA. \textbf{Censo Demográfico
+  2022: Características Urbanísticas do Entorno dos Domicílios}. Rio de
+  Janeiro: IBGE, 2025. Dispon{\'\i}vel em:
+  \url{https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[INSTITUTO DE PESQUISA ECONÔMICA APLICADA 2019]{ipea2019ods11}
+\abntrefinfo{IPEA}{IPEA}{2019}
+{INSTITUTO DE PESQUISA ECONÔMICA APLICADA. \textbf{Cadernos ODS --- ODS 11:
+  Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes
+  e sustentáveis: o que mostra o retrato do Brasil?} Brasília, DF: IPEA,
+  2019. Dispon{\'\i}vel em: \url{https://www.ipea.gov.br/portal/publicacoes}.
+  Acesso em: 19 out. 2026.}
+
+\bibitem[NAÇÕES UNIDAS BRASIL 2015]{onubrasil2015ods11}
+\abntrefinfo{ONU Brasil}{ONU BRASIL}{2015a}
+{NAÇÕES UNIDAS BRASIL. \textbf{Objetivo de Desenvolvimento Sustentável 11:
+  Cidades e comunidades sustentáveis}. Brasília, DF: ONU Brasil, 2015.
+Dispon{\'\i}vel em: \url{https://brasil.un.org/pt-br/sdgs/11}. Acesso em: 19
+  out. 2026.}
+
+\bibitem[NAÇÕES UNIDAS BRASIL 2015]{onubrasil2015ods16}
+\abntrefinfo{ONU Brasil}{ONU BRASIL}{2015b}
+{NAÇÕES UNIDAS BRASIL. \textbf{Objetivo de Desenvolvimento Sustentável 16:
+  Paz, Justiça e Instituições Eficazes}. Brasília, DF: ONU Brasil, 2015.
+Dispon{\'\i}vel em: \url{https://brasil.un.org/pt-br/sdgs/16}. Acesso em: 19
+  out. 2026.}
+
+\bibitem[NAÇÕES UNIDAS BRASIL 2015]{onubrasil2015ods9}
+\abntrefinfo{ONU Brasil}{ONU BRASIL}{2015c}
+{NAÇÕES UNIDAS BRASIL. \textbf{Objetivo de Desenvolvimento Sustentável 9:
+  Indústria, inovação e infraestrutura}. Brasília, DF: ONU Brasil, 2015.
+Dispon{\'\i}vel em: \url{https://brasil.un.org/pt-br/sdgs/9}. Acesso em: 19
+  out. 2026.}
+
+\bibitem[ORGANIZAÇÃO DAS NAÇÕES UNIDAS 2015]{onu2015agenda2030}
+\abntrefinfo{ONU}{ONU}{2015}
+{ORGANIZAÇÃO DAS NAÇÕES UNIDAS. \textbf{Transformando Nosso Mundo: A Agenda
+  2030 para o Desenvolvimento Sustentável}. Nova York: ONU, 2015.
+Dispon{\'\i}vel em:
+  \url{https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustentavel}.
+  Acesso em: 19 out. 2026.}
+
+\end{thebibliography}

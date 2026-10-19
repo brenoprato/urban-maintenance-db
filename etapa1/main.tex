@@ -1,0 +1,164 @@
+% =============================================================================
+% RELATÓRIO TÉCNICO-ACADÊMICO — ETAPA 1 (DISCIPLINA DE BANCO DE DADOS)
+% Padrão ABNT (abntex2 + abntex2cite [alf]) — Compatível com TeX Live e Overleaf
+% =============================================================================
+\documentclass[
+    12pt,
+    openany,
+    oneside,
+    a4paper,
+    english,
+    brazil
+]{abntex2}
+
+% --- Pacotes de codificação, fontes e tipografia ---
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{indentfirst}
+\usepackage{microtype}
+
+% --- Pacotes gráficos, tabelas e citações ---
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage[alf,abnt-emphasize=bf]{abntex2cite}
+
+% --- Tipos de coluna alinhados à esquerda/direita sem hifenização forçada ---
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% --- Configuração de margens ABNT (NBR 14724): sup/esq 3 cm; inf/dir 2 cm ---
+\setlrmarginsandblock{3cm}{2cm}{*}
+\setulmarginsandblock{3cm}{2cm}{*}
+\checkandfixthelayout
+
+% --- Espaçamento de parágrafos, seções e indentação ABNT ---
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\setlength{\afterchapskip}{18pt}
+\setlength{\beforesecskip}{14pt}
+\setlength{\aftersecskip}{8pt}
+\setlength{\beforesubsecskip}{10pt}
+\setlength{\aftersubsecskip}{6pt}
+
+% --- Dados do grupo, disciplina e instituição ---
+\input{dados-grupo}
+
+\titulo{\tituloTrabalho}
+\autor{\integrantes}
+\local{\cidadeLocal}
+\data{\anoTrabalho}
+\instituicao{%
+  \instituicaoNome
+  \par
+  \cursoNome
+  \par
+  Disciplina: \disciplinaNome
+}
+\orientador[Professor(a):]{\professorNome}
+\preambulo{Trabalho acadêmico apresentado à disciplina de \disciplinaNome{} do curso de \cursoNome{} da \instituicaoNome{}, como requisito parcial de avaliação da Etapa 1 (Descrição do Problema e Enquadramento nos Objetivos de Desenvolvimento Sustentável).}
+
+% --- Customização da Capa ABNT (NBR 14724) para incluir Instituição no topo ---
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+    {\ABNTEXchapterfont\large\imprimirinstituicao}
+    \vspace*{1.5cm}
+
+    {\ABNTEXchapterfont\large\imprimirautor}
+
+    \vfill
+    \begin{center}
+    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
+    \end{center}
+    \vfill
+
+    \large\imprimirlocal
+
+    \large\imprimirdata
+
+    \vspace*{1cm}
+  \end{capa}
+}
+
+% --- Configurações do pacote hyperref (PDF/Metadados) ---
+\definecolor{blueLink}{RGB}{0,51,102}
+\makeatletter
+\hypersetup{
+    pdftitle={\tituloTrabalho},
+    pdfauthor={Grupo - Disciplina de Banco de Dados},
+    pdfsubject={Monitoramento e Manutenção Colaborativa de Infraestrutura Urbana (ODS 11)},
+    pdfkeywords={Infraestrutura urbana, Zeladoria municipal, Banco de dados relacional, ODS 11, Agenda 2030},
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=blueLink,
+    bookmarksdepth=4
+}
+\makeatother
+
+% =============================================================================
+% INÍCIO DO DOCUMENTO
+% =============================================================================
+\begin{document}
+
+\selectlanguage{brazil}
+\frenchspacing
+
+% -----------------------------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% -----------------------------------------------------------------------------
+\pretextual
+
+% Capa (sem conflito de âncora hyperref page.1 com a folha de rosto)
+\hypersetup{pageanchor=false}
+\imprimircapa
+\hypersetup{pageanchor=true}
+
+% Folha de rosto (início da contagem de páginas ABNT NBR 14724)
+\imprimirfolhaderosto*
+
+% Resumo em língua vernácula (Português) e língua estrangeira (Inglês)
+\input{pre-textuais/resumo}
+\input{pre-textuais/abstract}
+
+% Lista de ilustrações (figuras)
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\newpage
+
+% Lista de tabelas
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\newpage
+
+% Sumário
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\newpage
+
+% -----------------------------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% -----------------------------------------------------------------------------
+\textual
+
+\input{capitulos/01-introducao}
+\input{capitulos/02-problema}
+\input{capitulos/03-ods}
+\input{capitulos/04-escopo-sistema}
+\input{capitulos/05-consideracoes-finais}
+
+% -----------------------------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% -----------------------------------------------------------------------------
+\postextual
+
+\bibliography{referencias}
+
+\end{document}

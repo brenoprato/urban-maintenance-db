@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+"""
+Wrapper leve para o modulo nativo sqlite3 do Python, compativel com os comandos:
+  sqlite3 :memory: ".read schema.sql" ".tables"
+  sqlite3 :memory: "PRAGMA foreign_keys=ON;" ".read schema.sql" "PRAGMA foreign_key_check;"
+"""
+import sqlite3
+import sys
+from pathlib import Path
+
+
+def main() -> int:
+    if len(sys.argv) < 2:
+        print("Uso: sqlite3 <db_path> [comandos...]", file=sys.stderr)
+        return 1
+
+    db_path = sys.argv[1]
+    commands = sys.argv[2:]
+
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
+
+    try:
+        for cmd in commands:
+            cmd_stripped = cmd.strip()
+            if cmd_stripped.startswith(".read "):
+                sql_file = Path(cmd_stripped.split(maxsplit=1)[1])
+                sql_content = sql_file.read_text(encoding="utf-8")
+                cur.executescript(sql_content)
+            elif cmd_stripped == ".tables":
+                cur.execute(
+                    "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name;"
+                )
+                tables = [r[0] for r in cur.fetchall()]
+                print("  ".join(tables))
+            else:
+                cur.execute(cmd_stripped)
+                rows = cur.fetchall()
+                for row in rows:
+                    print("|".join(str(col) for col in row))
+        conn.commit()
+    finally:
+        conn.close()
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

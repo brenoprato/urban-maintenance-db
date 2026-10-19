@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1914" height="613" viewBox="0 0 1914 613">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <polyline points="623,117 614,117 614,100 614,100 614,100 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,136 614,136 614,109 614,109 614,109 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,155 614,155 614,119 614,119 614,119 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,174 614,174 614,128 614,128 614,128 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,193 614,193 614,138 614,138 614,138 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,212 614,212 614,147 614,147 614,147 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,231 614,231 614,157 614,157 614,157 614,90" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,457 74,457 74,440 74,440 74,440 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,476 74,476 74,449 74,449 74,449 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,495 74,495 74,459 74,459 74,459 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,514 74,514 74,468 74,468 74,468 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,533 74,533 74,478 74,478 74,478 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="83,552 74,552 74,487 74,487 74,487 74,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,457 614,457 614,440 614,440 614,440 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,476 614,476 614,449 614,449 614,449 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,495 614,495 614,459 614,459 614,459 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,514 614,514 614,468 614,468 614,468 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,533 614,533 614,478 614,478 614,478 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="623,552 614,552 614,487 614,487 614,487 614,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1163,457 1154,457 1154,440 1154,440 1154,440 1154,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1163,476 1154,476 1154,449 1154,449 1154,449 1154,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1163,495 1154,495 1154,459 1154,459 1154,459 1154,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1163,514 1154,514 1154,468 1154,468 1154,468 1154,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1163,533 1154,533 1154,478 1154,478 1154,478 1154,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,457 1694,457 1694,440 1694,440 1694,440 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,476 1694,476 1694,449 1694,449 1694,449 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,495 1694,495 1694,459 1694,459 1694,459 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,514 1694,514 1694,468 1694,468 1694,468 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,533 1694,533 1694,478 1694,478 1694,478 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1703,552 1694,552 1694,487 1694,487 1694,487 1694,430" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,410 230,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,410 599,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,410 770,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,410 1139,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1410,410 1310,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1580,410 1679,410" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,324 145,324 145,389" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,324 545,324 545,70 599,70" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,324 1225,324 1225,389" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,324 825,324 825,70 770,70" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <rect x="602" y="52" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="600" y="50" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="74" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">ordem_servico</text>
+  <circle cx="631" cy="117" r="5.5" fill="#000000" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="121" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">id_os</text>
+  <circle cx="631" cy="136" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="140" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">data_emissao</text>
+  <circle cx="631" cy="155" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="159" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">data_inicio_execucao</text>
+  <circle cx="631" cy="174" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="178" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">data_conclusao</text>
+  <circle cx="631" cy="193" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="197" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">relatorio_tecnico</text>
+  <circle cx="631" cy="212" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="216" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">custo_mao_de_obra</text>
+  <circle cx="631" cy="231" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="235" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">status_os</text>
+  <rect x="62" y="392" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="60" y="390" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="145" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">veiculo_frota</text>
+  <circle cx="91" cy="457" r="5.5" fill="#000000" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="461" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">placa_veiculo</text>
+  <circle cx="91" cy="476" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="480" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">tipo_veiculo</text>
+  <circle cx="91" cy="495" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="499" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">modelo</text>
+  <circle cx="91" cy="514" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="518" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">ano</text>
+  <circle cx="91" cy="533" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="537" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">capacidade_carga</text>
+  <circle cx="91" cy="552" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="100" y="556" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">status_manutencao</text>
+  <rect x="602" y="392" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="600" y="390" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">secretaria_orgao</text>
+  <circle cx="631" cy="457" r="5.5" fill="#000000" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="461" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">id_secretaria</text>
+  <circle cx="631" cy="476" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="480" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">nome_secretaria</text>
+  <circle cx="631" cy="495" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="499" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">sigla</text>
+  <circle cx="631" cy="514" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="518" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">nome_secretario_responsavel</text>
+  <circle cx="631" cy="533" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="537" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">telefone_contato</text>
+  <circle cx="631" cy="552" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="640" y="556" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">orcamento_mensal</text>
+  <rect x="1142" y="392" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1140" y="390" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1225" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">equipe_manutencao</text>
+  <circle cx="1171" cy="457" r="5.5" fill="#000000" stroke="#000000" stroke-width="1.2"/>
+  <text x="1180" y="461" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">id_equipe</text>
+  <circle cx="1171" cy="476" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1180" y="480" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">nome_equipe</text>
+  <circle cx="1171" cy="495" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1180" y="499" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">categoria_problema_atendida</text>
+  <circle cx="1171" cy="514" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1180" y="518" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">turno_trabalho</text>
+  <circle cx="1171" cy="533" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1180" y="537" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">status_disponibilidade</text>
+  <rect x="1682" y="392" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1680" y="390" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1765" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">funcionario</text>
+  <circle cx="1711" cy="457" r="5.5" fill="#000000" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="461" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">matricula_funcionario</text>
+  <circle cx="1711" cy="476" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="480" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">cpf</text>
+  <circle cx="1711" cy="495" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="499" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">nome_funcionario</text>
+  <circle cx="1711" cy="514" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="518" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">cargo_funcao</text>
+  <circle cx="1711" cy="533" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="537" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">data_admissao</text>
+  <circle cx="1711" cy="552" r="5.5" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1720" y="556" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">telefone_corporativo</text>
+  <polygon points="330,410 415,386 500,410 415,434" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">mantem_frota</text>
+  <polygon points="870,410 955,386 1040,410 955,434" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">coordena</text>
+  <polygon points="1410,410 1495,386 1580,410 1495,434" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1495" y="414" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">e_composta_por</text>
+  <text x="255" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="573" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="796" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <text x="1113" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="1336" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <text x="1653" y="404" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <polygon points="330,324 415,300 500,324 415,348" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="328" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">desloca_para</text>
+  <text x="125" y="377" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="573" y="64" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <polygon points="870,324 955,300 1040,324 955,348" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="328" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">executa</text>
+  <text x="1205" y="377" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="795" y="64" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+</svg>

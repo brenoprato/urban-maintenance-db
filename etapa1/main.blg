@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: referencias.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 16 entries,
+            6714 wiz_defined-function locations,
+            1268 strings with 12056 characters,
+and the built_in function-call counts, 24688 in all, are:
+= -- 3393
+> -- 49
+< -- 826
++ -- 892
+- -- 15
+* -- 1332
+:= -- 2663
+add.period$ -- 68
+call.type$ -- 16
+change.case$ -- 84
+chr.to.int$ -- 17
+cite$ -- 14
+duplicate$ -- 2947
+empty$ -- 1064
+format.name$ -- 70
+if$ -- 4977
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 277
+newline$ -- 70
+num.names$ -- 10
+pop$ -- 389
+preamble$ -- 1
+purify$ -- 49
+quote$ -- 0
+skip$ -- 3021
+stack$ -- 1
+substring$ -- 1130
+swap$ -- 1028
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 38
+width$ -- 0
+write$ -- 230

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1914" height="598" viewBox="0 0 1914 598">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <polyline points="330,110 230,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,110 599,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,110 770,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,110 1139,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1410,110 1310,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1580,110 1679,110" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="600,42 145,42 145,89" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="770,42 1225,42 1225,89" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,310 230,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,310 599,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,310 770,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,310 1139,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1410,310 1310,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1580,310 1679,310" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,219 545,219 545,122 599,122" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,219 145,219 145,289" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,219 1085,219 1085,122 1139,122" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,219 685,219 685,289" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,520 230,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,520 599,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,520 770,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,520 1139,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1410,520 1310,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1580,520 1679,520" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="330,434 145,434 145,499" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="500,434 545,434 545,322 599,322" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="1040,434 1225,434 1225,499" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <polyline points="870,434 825,434 825,322 770,322" fill="none" stroke="#000000" stroke-width="1.2"/>
+  <rect x="62" y="92" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="60" y="90" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="145" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">regiao_cep</text>
+  <rect x="602" y="92" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="600" y="90" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">cidadao</text>
+  <rect x="1142" y="92" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1140" y="90" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1225" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">ocorrencia</text>
+  <rect x="1682" y="92" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1680" y="90" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1765" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">anexo_midia</text>
+  <polygon points="330,110 415,86 500,110 415,134" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">endereco_moradia</text>
+  <polygon points="870,110 955,86 1040,110 955,134" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">reporta</text>
+  <polygon points="1410,110 1495,86 1580,110 1495,134" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1495" y="114" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">possui</text>
+  <polygon points="600,42 685,18 770,42 685,66" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="46" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">local_do_problema</text>
+  <text x="256" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="573" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="796" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="1113" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="1336" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="1653" y="104" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="125" y="77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="1205" y="77" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <rect x="62" y="292" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="60" y="290" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="145" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">avaliacao_atendimento</text>
+  <rect x="602" y="292" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="600" y="290" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">ordem_servico</text>
+  <rect x="1142" y="292" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1140" y="290" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1225" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">material_insumo</text>
+  <rect x="1682" y="292" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1680" y="290" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1765" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">fornecedor</text>
+  <polygon points="330,310 415,286 500,310 415,334" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">recebe</text>
+  <polygon points="870,310 955,286 1040,310 955,334" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">consome</text>
+  <polygon points="1410,310 1495,286 1580,310 1495,334" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1495" y="314" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">fornece</text>
+  <text x="255" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="573" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,1)</text>
+  <text x="796" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="1113" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="1336" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <text x="1653" y="304" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <polygon points="330,219 415,195 500,219 415,243" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="223" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">registra_avaliacao</text>
+  <text x="582" y="136" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="125" y="277" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <polygon points="870,219 955,195 1040,219 955,243" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="223" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">gera</text>
+  <text x="1122" y="136" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="665" y="277" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <rect x="62" y="502" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="60" y="500" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="145" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">veiculo_frota</text>
+  <rect x="602" y="502" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="600" y="500" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="685" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">secretaria_orgao</text>
+  <rect x="1142" y="502" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1140" y="500" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1225" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">equipe_manutencao</text>
+  <rect x="1682" y="502" width="170" height="40" fill="#808080" stroke="none"/>
+  <rect x="1680" y="500" width="170" height="40" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1765" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">funcionario</text>
+  <polygon points="330,520 415,496 500,520 415,544" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">mantem_frota</text>
+  <polygon points="870,520 955,496 1040,520 955,544" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">coordena</text>
+  <polygon points="1410,520 1495,496 1580,520 1495,544" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="1495" y="524" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">e_composta_por</text>
+  <text x="255" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="573" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="796" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <text x="1113" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <text x="1336" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,n)</text>
+  <text x="1653" y="514" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <polygon points="330,434 415,410 500,434 415,458" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="415" y="438" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">desloca_para</text>
+  <text x="125" y="487" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="581" y="336" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+  <polygon points="870,434 955,410 1040,434 955,458" fill="#ffffff" stroke="#000000" stroke-width="1.2"/>
+  <text x="955" y="438" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">executa</text>
+  <text x="1205" y="487" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(0,n)</text>
+  <text x="795" y="336" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#000000">(1,1)</text>
+</svg>
