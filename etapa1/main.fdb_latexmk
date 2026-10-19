@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1792434166.12038 "main.aux" "main.bbl" "main" 1792434167.32791 0
+["bibtex main"] 1792434612.15214 "main.aux" "main.bbl" "main" 1792434613.32197 0
   "./referencias.bib" 1792434139.76149 6426 ddde8c2d7845678cec2798ee13e50e9d ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1792434167.0088 28741 0479ef4f1e8e2dca6515cc2dc180dd91 "pdflatex"
+  "main.aux" 1792434612.94616 28741 0479ef4f1e8e2dca6515cc2dc180dd91 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792434166.2103 "main.tex" "main.pdf" "main" 1792434167.32806 0
+["pdflatex"] 1792434612.24389 "main.tex" "main.pdf" "main" 1792434613.32214 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -165,15 +165,15 @@
   "capitulos/02-problema.tex" 1792433641.68179 14400 4343e6b78a72d6b19838432b40f82168 ""
   "capitulos/03-ods.tex" 1792433556.46381 9599 fb043af718704baadfad256d4a1896ce ""
   "capitulos/04-escopo-sistema.tex" 1792433643.42281 9596 ea66e6fbfab40bb697c80cfe88518f11 ""
-  "capitulos/05-consideracoes-finais.tex" 1792433700.21246 2927 8c65a77dd2f7044b20addd05be535d33 ""
+  "capitulos/05-consideracoes-finais.tex" 1792434525.02089 2918 73beaffdcb268b060756e9c486e9702f ""
   "dados-grupo.tex" 1792432993.06134 922 b2e3276a48f3c16a81d9644eab8bac1a ""
   "figuras/fluxo-zeladoria.pdf" 1792432610.32765 52405 4e60e3b7c156bd334436f06e0854b859 ""
-  "main.aux" 1792434167.0088 28741 0479ef4f1e8e2dca6515cc2dc180dd91 "pdflatex"
-  "main.bbl" 1792434166.20579 5790 fa61529b497a094dc36dd16527cc9e5b "bibtex main"
-  "main.lof" 1792434167.0128 241 27f23e2c7b8b7ce69804872c4d7bd792 "pdflatex"
-  "main.lot" 1792434167.0128 822 0f32be4f83746dd84b513df7f8daae3d "pdflatex"
+  "main.aux" 1792434612.94616 28741 0479ef4f1e8e2dca6515cc2dc180dd91 "pdflatex"
+  "main.bbl" 1792434612.24088 5790 fa61529b497a094dc36dd16527cc9e5b "bibtex main"
+  "main.lof" 1792434612.95189 241 27f23e2c7b8b7ce69804872c4d7bd792 "pdflatex"
+  "main.lot" 1792434612.95189 822 0f32be4f83746dd84b513df7f8daae3d "pdflatex"
   "main.tex" 1792433899.02474 4756 08669f5a288ebedf1ef52a43c82780a2 ""
-  "main.toc" 1792434167.0128 3468 f6204deed29b172e57adc1c00962ff17 "pdflatex"
+  "main.toc" 1792434612.95189 3468 f6204deed29b172e57adc1c00962ff17 "pdflatex"
   "pre-textuais/abstract.tex" 1792432640.56204 2575 53e125e101866eb7be26cac668cd04c3 ""
   "pre-textuais/resumo.tex" 1792432639.57703 2727 884e707a9d375304a22c003d5d6fe272 ""
   (generated)

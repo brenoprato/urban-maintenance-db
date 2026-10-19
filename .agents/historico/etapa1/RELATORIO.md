@@ -5,7 +5,7 @@
 A **Etapa 1** do projeto de Banco de Dados foi integralmente executada no diretório [`etapa1/`](file:///home/BRENO/Prog/projects/bd_final/etapa1), produzindo um relatório técnico acadêmico no padrão **ABNT (`abntex2`)**, 100% compatível com o Overleaf e alinhado com a especificação de domínio ([`.agents/spec_bd.md`](file:///home/BRENO/Prog/projects/bd_final/.agents/spec_bd.md)) e com a modelagem da Etapa 2 ([`modelagem/`](file:///home/BRENO/Prog/projects/bd_final/modelagem)):
 
 - **Configuração e Metadados do Grupo ([`etapa1/dados-grupo.tex`](file:///home/BRENO/Prog/projects/bd_final/etapa1/dados-grupo.tex))**:
-  - Placeholders simbólicos configurados para os 3 integrantes (`[NOME 1] — RA [RA 1]`, `[NOME 2] — RA [RA 2]`, `[NOME 3] — RA [RA 3]`) e para os metadados institucionais (`[NOME DA INSTITUIÇÃO]`, `[CURSO]`, `[NOME DO(A) PROFESSOR(A)]`, `[CIDADE]`).
+  - Placeholders simbólicos configurados para os 3 integrantes (`[NOME 1] — RA [RA 1]`, `[NOME 2] — RA [RA 2]`, `[NOME 3] — RA [RA 3]`) e para os metadados institucionais (`[NOME DA INSTITUIÇÃO]`, `[CURSO]`, `[PROFESSOR(A)]`, `[CIDADE]`).
 - **Elementos Pré-Textuais**:
   - Capa e Folha de Rosto automatizadas em [`etapa1/main.tex`](file:///home/BRENO/Prog/projects/bd_final/etapa1/main.tex) com natureza do trabalho acadêmico.
   - Resumo em português ([`etapa1/pre-textuais/resumo.tex`](file:///home/BRENO/Prog/projects/bd_final/etapa1/pre-textuais/resumo.tex)) e Abstract em inglês ([`etapa1/pre-textuais/abstract.tex`](file:///home/BRENO/Prog/projects/bd_final/etapa1/pre-textuais/abstract.tex)) em parágrafo único conforme ABNT NBR 6028.
@@ -26,6 +26,6 @@ A **Etapa 1** do projeto de Banco de Dados foi integralmente executada no diret�
 - Editar [`etapa1/dados-grupo.tex`](file:///home/BRENO/Prog/projects/bd_final/etapa1/dados-grupo.tex) substituindo os placeholders simbólicos pelos dados reais:
   - `\instituicaoNome`: `[NOME DA INSTITUIÇÃO]`
   - `\cursoNome`: `[CURSO]`
-  - `\professorNome`: `[NOME DO(A) PROFESSOR(A)]`
+  - `\professorNome`: `[PROFESSOR(A)]`
   - `\cidadeLocal`: `[CIDADE]`
   - `\integrantes`: `[NOME 1]`, `[RA 1]`, `[NOME 2]`, `[RA 2]`, `[NOME 3]`, `[RA 3]`

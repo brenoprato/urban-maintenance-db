@@ -4,7 +4,7 @@
 
 1. **Alinhamento Estrito com a Especificação e com a Etapa 2 (`spec_bd.md` e `modelagem/`)**:
    - O relatório da Etapa 1 foi redigido como o documento fundacional do **Sistema de Monitoramento e Manutenção Colaborativa de Infraestrutura Urbana** (zeladoria urbana colaborativa e gestão de Ordens de Serviço), mantendo 100% de consistência semântica, terminológica e quantitativa com `.agents/spec_bd.md` e com o trabalho já consolidado da Etapa 2 (`modelagem/`).
-   - No Capítulo 4 (*Escopo do Sistema de Banco de Dados*), foram apresentadas as **12 entidades principais de negócio** organizadas em três subdomínios (*Demanda Cidadã e Território*, *Estrutura Administrativa e Operacional* e *Execução de Serviços e Suprimentos*), além das **2 relações associativas N:M** (consumo de materiais por Ordem de Serviço e fornecimento de lotes de materiais por fornecedor), totalizando exatamente as **14 tabelas relacionais em 3FN** implementadas na Etapa 2.
+   - No Capítulo 4 (*Escopo do Sistema de Banco de Dados*), foram apresentadas as **12 entidades principais de negócio** organizadas em três subdomínios (*Demandas do Cidadão e Base Geográfica*, *Estrutura Operacional e Recursos Municipais* e *Execução de OS e Cadeia de Suprimentos*), além das **2 relações associativas N:M** (consumo de materiais por Ordem de Serviço e fornecimento de lotes de materiais por fornecedor), totalizando exatamente as **14 tabelas relacionais em 3FN** implementadas na Etapa 2.
 
 2. **Padrão ABNT (`abntex2`) e Compatibilidade com Overleaf**:
    - Estrutura modular em `/home/BRENO/Prog/projects/bd_final/etapa1/` com separação de metadados (`dados-grupo.tex`), elementos pré-textuais (`pre-textuais/resumo.tex` e `abstract.tex`), cinco capítulos (`capitulos/01-introducao.tex` a `05-consideracoes-finais.tex`), figura vetorial TikZ (`figuras/fluxo-zeladoria.tex` + `.pdf` + `.png`) e base bibliográfica verificada (`referencias.bib`).
@@ -20,4 +20,4 @@
 
 4. **Compilação e Qualidade Tipográfica**:
    - Compilação limpa via `latexmk -pdf` sem nenhum erro e com zero warnings de documento (`0 Overfull \hbox`, `0 Underfull \hbox`, `0 Undefined citations/references`).
-   - Volume de texto nos capítulos numerados (Capítulos 1 a 5): **15 páginas de corpo textual** (páginas 7 a 21 do PDF, numeração impressa 6 a 20), dentro da meta de 8 a 15 páginas de conteúdo definida no guia da Etapa 1.
+   - Volume de texto nos capítulos numerados (Capítulos 1 a 5): **15 páginas de corpo textual** (páginas 8 a 22 do PDF, numeração impressa 7 a 21), dentro da meta de 8 a 15 páginas de conteúdo definida no guia da Etapa 1.
