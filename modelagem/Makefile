@@ -9,12 +9,8 @@ all: diagramas validar
 
 diagramas: tools/GeradorBrModelo.class
 	mkdir -p diagramas diagramas/out
-	$(JAVA) -cp $(BRMODELO_JAR):tools GeradorBrModelo diagramas diagramas/out
-	@if command -v rsvg-convert >/dev/null 2>&1; then \
-		for f in diagramas/out/*.svg; do \
-			rsvg-convert -f pdf -o "$${f%.svg}.pdf" "$$f"; \
-		done; \
-	fi
+	$(JAVA) -cp $(BRMODELO_JAR):tools GeradorBrModelo diagramas
+	rm -f *.chc ../*.chc
 
 tools/GeradorBrModelo.class: tools/GeradorBrModelo.java $(BRMODELO_JAR)
 	$(JAVAC) -cp $(BRMODELO_JAR) tools/GeradorBrModelo.java
@@ -31,4 +27,4 @@ abrir-brmodelo:
 	java -jar $(BRMODELO_JAR) diagramas/04-modelo-completo.brM3 &
 
 clean:
-	rm -rf diagramas/out tools/*.class
+	rm -rf diagramas/out tools/*.class *.chc ../*.chc

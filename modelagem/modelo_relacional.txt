@@ -1,0 +1,46 @@
+MODELO LÓGICO RELACIONAL
+Convenção: TABELA(c̲h̲a̲v̲e̲_̲p̲r̲i̲m̲a̲r̲i̲a̲, #chave_estrangeira, atributo_1, atributo_2, ...)
+
+1. regiao_cep(c̲e̲p̲, cidade, bairro, logradouro, ponto_referencia_regiao)
+
+2. cidadao(i̲d̲_̲c̲i̲d̲a̲d̲a̲o̲, #cep_moradia, cpf, nome_completo, email, telefone, numero_residencia)
+   - #cep_moradia referencia regiao_cep(cep)
+
+3. ocorrencia(i̲d̲_̲o̲c̲o̲r̲r̲e̲n̲c̲i̲a̲, #id_cidadao, #cep_ocorrencia, protocolo, titulo, descricao_detalhada, categoria_problema, nivel_gravidade, data_abertura, status_atual, numero_aproximado)
+   - #id_cidadao referencia cidadao(id_cidadao)
+   - #cep_ocorrencia referencia regiao_cep(cep)
+
+4. anexo_midia(i̲d̲_̲a̲n̲e̲x̲o̲, #id_ocorrencia, url_arquivo, tipo_midia, data_upload)
+   - #id_ocorrencia referencia ocorrencia(id_ocorrencia)
+
+5. secretaria_orgao(i̲d̲_̲s̲e̲c̲r̲e̲t̲a̲r̲i̲a̲, nome_secretaria, sigla, nome_secretario_responsavel, telefone_contato, orcamento_mensal)
+
+6. equipe_manutencao(i̲d̲_̲e̲q̲u̲i̲p̲e̲, #id_secretaria, nome_equipe, categoria_problema_atendida, turno_trabalho, status_disponibilidade)
+   - #id_secretaria referencia secretaria_orgao(id_secretaria)
+
+7. funcionario(m̲a̲t̲r̲i̲c̲u̲l̲a̲_̲f̲u̲n̲c̲i̲o̲n̲a̲r̲i̲o̲, #id_equipe, cpf, nome_funcionario, cargo_funcao, data_admissao, telefone_corporativo)
+   - #id_equipe referencia equipe_manutencao(id_equipe)
+
+8. veiculo_frota(p̲l̲a̲c̲a̲_̲v̲e̲i̲c̲u̲l̲o̲, #id_secretaria, tipo_veiculo, modelo, ano, capacidade_carga, status_manutencao)
+   - #id_secretaria referencia secretaria_orgao(id_secretaria)
+
+9. ordem_servico(i̲d̲_̲o̲s̲, #id_ocorrencia, #id_equipe, #placa_veiculo, data_emissao, data_inicio_execucao, data_conclusao, relatorio_tecnico, custo_mao_de_obra, status_os)
+   - #id_ocorrencia referencia ocorrencia(id_ocorrencia)
+   - #id_equipe referencia equipe_manutencao(id_equipe)
+   - #placa_veiculo referencia veiculo_frota(placa_veiculo)
+
+10. material_insumo(i̲d̲_̲m̲a̲t̲e̲r̲i̲a̲l̲, nome_material, unidade_medida, quantidade_estoque_atual, custo_unitario_medio)
+
+11. fornecedor(i̲d̲_̲f̲o̲r̲n̲e̲c̲e̲d̲o̲r̲, cnpj, razao_social, telefone, email_comercial, cidade_sede)
+
+12. avaliacao_atendimento(i̲d̲_̲a̲v̲a̲l̲i̲a̲c̲a̲o̲, #id_os, #id_cidadao, nota_satisfacao, comentario_cidadao, problema_resolvido_boolean, data_avaliacao)
+    - #id_os referencia ordem_servico(id_os) [UNIQUE]
+    - #id_cidadao referencia cidadao(id_cidadao)
+
+13. consumo_material_os(#̲i̲d̲_̲o̲s̲, #̲i̲d̲_̲m̲a̲t̲e̲r̲i̲a̲l̲, quantidade_utilizada, data_baixa_estoque)
+    - #id_os referencia ordem_servico(id_os)
+    - #id_material referencia material_insumo(id_material)
+
+14. fornecimento_insumo(#̲i̲d̲_̲f̲o̲r̲n̲e̲c̲e̲d̲o̲r̲, #̲i̲d̲_̲m̲a̲t̲e̲r̲i̲a̲l̲, n̲u̲m̲e̲r̲o̲_̲l̲o̲t̲e̲_̲c̲o̲m̲p̲r̲a̲, data_entrega, quantidade_comprada, preco_unitario_compra)
+    - #id_fornecedor referencia fornecedor(id_fornecedor)
+    - #id_material referencia material_insumo(id_material)

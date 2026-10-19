@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Modelo Lógico Relacional</title>
+<style>
+  body { font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: #111; max-width: 900px; margin: 24px auto; }
+  h1, h2 { margin-bottom: 8px; }
+  ol { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  ul { margin-top: 2px; margin-bottom: 6px; color: #333; }
+</style>
+</head>
+<body>
+<h2>Modelo Lógico Relacional</h2>
+<p><em>Convenção:</em> <strong>tabela</strong>(<u>chave_primaria</u>, #chave_estrangeira, atributo_1, atributo_2, ...)</p>
+<ol>
+  <li><strong>regiao_cep</strong>(<u>cep</u>, cidade, bairro, logradouro, ponto_referencia_regiao)</li>
+  <li><strong>cidadao</strong>(<u>id_cidadao</u>, #cep_moradia, cpf, nome_completo, email, telefone, numero_residencia)
+    <ul><li>#cep_moradia referencia regiao_cep(cep)</li></ul>
+  </li>
+  <li><strong>ocorrencia</strong>(<u>id_ocorrencia</u>, #id_cidadao, #cep_ocorrencia, protocolo, titulo, descricao_detalhada, categoria_problema, nivel_gravidade, data_abertura, status_atual, numero_aproximado)
+    <ul>
+      <li>#id_cidadao referencia cidadao(id_cidadao)</li>
+      <li>#cep_ocorrencia referencia regiao_cep(cep)</li>
+    </ul>
+  </li>
+  <li><strong>anexo_midia</strong>(<u>id_anexo</u>, #id_ocorrencia, url_arquivo, tipo_midia, data_upload)
+    <ul><li>#id_ocorrencia referencia ocorrencia(id_ocorrencia)</li></ul>
+  </li>
+  <li><strong>secretaria_orgao</strong>(<u>id_secretaria</u>, nome_secretaria, sigla, nome_secretario_responsavel, telefone_contato, orcamento_mensal)</li>
+  <li><strong>equipe_manutencao</strong>(<u>id_equipe</u>, #id_secretaria, nome_equipe, categoria_problema_atendida, turno_trabalho, status_disponibilidade)
+    <ul><li>#id_secretaria referencia secretaria_orgao(id_secretaria)</li></ul>
+  </li>
+  <li><strong>funcionario</strong>(<u>matricula_funcionario</u>, #id_equipe, cpf, nome_funcionario, cargo_funcao, data_admissao, telefone_corporativo)
+    <ul><li>#id_equipe referencia equipe_manutencao(id_equipe)</li></ul>
+  </li>
+  <li><strong>veiculo_frota</strong>(<u>placa_veiculo</u>, #id_secretaria, tipo_veiculo, modelo, ano, capacidade_carga, status_manutencao)
+    <ul><li>#id_secretaria referencia secretaria_orgao(id_secretaria)</li></ul>
+  </li>
+  <li><strong>ordem_servico</strong>(<u>id_os</u>, #id_ocorrencia, #id_equipe, #placa_veiculo, data_emissao, data_inicio_execucao, data_conclusao, relatorio_tecnico, custo_mao_de_obra, status_os)
+    <ul>
+      <li>#id_ocorrencia referencia ocorrencia(id_ocorrencia)</li>
+      <li>#id_equipe referencia equipe_manutencao(id_equipe)</li>
+      <li>#placa_veiculo referencia veiculo_frota(placa_veiculo)</li>
+    </ul>
+  </li>
+  <li><strong>material_insumo</strong>(<u>id_material</u>, nome_material, unidade_medida, quantidade_estoque_atual, custo_unitario_medio)</li>
+  <li><strong>fornecedor</strong>(<u>id_fornecedor</u>, cnpj, razao_social, telefone, email_comercial, cidade_sede)</li>
+  <li><strong>avaliacao_atendimento</strong>(<u>id_avaliacao</u>, #id_os, #id_cidadao, nota_satisfacao, comentario_cidadao, problema_resolvido_boolean, data_avaliacao)
+    <ul>
+      <li>#id_os referencia ordem_servico(id_os) [UNIQUE]</li>
+      <li>#id_cidadao referencia cidadao(id_cidadao)</li>
+    </ul>
+  </li>
+  <li><strong>consumo_material_os</strong>(<u>#id_os</u>, <u>#id_material</u>, quantidade_utilizada, data_baixa_estoque)
+    <ul>
+      <li>#id_os referencia ordem_servico(id_os)</li>
+      <li>#id_material referencia material_insumo(id_material)</li>
+    </ul>
+  </li>
+  <li><strong>fornecimento_insumo</strong>(<u>#id_fornecedor</u>, <u>#id_material</u>, <u>numero_lote_compra</u>, data_entrega, quantidade_comprada, preco_unitario_compra)
+    <ul>
+      <li>#id_fornecedor referencia fornecedor(id_fornecedor)</li>
+      <li>#id_material referencia material_insumo(id_material)</li>
+    </ul>
+  </li>
+</ol>
+</body>
+</html>

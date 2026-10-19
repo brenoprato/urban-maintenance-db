@@ -126,70 +126,71 @@ erDiagram
 
 ---
 
-### Lista de Tabelas Geradas (14 Tabelas)
+### Lista de Tabelas Geradas (14 Tabelas — Formato Texto)
 
-*Legenda: `[PK]` = Chave Primária | `#` = Chave Estrangeira (FK)*
+*Legenda: `<u>*atributo*</u>` = Chave Primária (PK sublinhada) | `#atributo` = Chave Estrangeira (FK) | `<u>*#atributo*</u>` = Chave Primária Composta e Estrangeira (PK + FK)*
 
 #### A. Tabelas Originadas de Entidades (Relacionamentos 1:1 e 1:N absorvidos via FK)
 
-1. **`regiao_cep`** (`cep` [PK], `cidade`, `bairro`, `logradouro`, `ponto_referencia_regiao`)
+1. **regiao_cep**(<u>*cep*</u>, cidade, bairro, logradouro, ponto_referencia_regiao)
    * **PK:** `cep`
 
-2. **`cidadao`** (`id_cidadao` [PK], `cpf`, `nome_completo`, `email`, `telefone`, `numero_residencia`, `#cep_moradia`)
+2. **cidadao**(<u>*id_cidadao*</u>, #cep_moradia, cpf, nome_completo, email, telefone, numero_residencia)
    * **PK:** `id_cidadao`
    * **FK:** `#cep_moradia` referencia `regiao_cep(cep)`
 
-3. **`ocorrencia`** (`id_ocorrencia` [PK], `protocolo`, `titulo`, `descricao_detalhada`, `categoria_problema`, `nivel_gravidade`, `data_abertura`, `status_atual`, `numero_aproximado`, `#id_cidadao`, `#cep_ocorrencia`)
+3. **ocorrencia**(<u>*id_ocorrencia*</u>, #id_cidadao, #cep_ocorrencia, protocolo, titulo, descricao_detalhada, categoria_problema, nivel_gravidade, data_abertura, status_atual, numero_aproximado)
    * **PK:** `id_ocorrencia`
    * **FK:** `#id_cidadao` referencia `cidadao(id_cidadao)`
    * **FK:** `#cep_ocorrencia` referencia `regiao_cep(cep)`
 
-4. **`anexo_midia`** (`id_anexo` [PK], `url_arquivo`, `tipo_midia`, `data_upload`, `#id_ocorrencia`)
+4. **anexo_midia**(<u>*id_anexo*</u>, #id_ocorrencia, url_arquivo, tipo_midia, data_upload)
    * **PK:** `id_anexo`
    * **FK:** `#id_ocorrencia` referencia `ocorrencia(id_ocorrencia)`
 
-5. **`secretaria_orgao`** (`id_secretaria` [PK], `nome_secretaria`, `sigla`, `nome_secretario_responsavel`, `telefone_contato`, `orcamento_mensal`)
+5. **secretaria_orgao**(<u>*id_secretaria*</u>, nome_secretaria, sigla, nome_secretario_responsavel, telefone_contato, orcamento_mensal)
    * **PK:** `id_secretaria`
 
-6. **`equipe_manutencao`** (`id_equipe` [PK], `nome_equipe`, `categoria_problema_atendida`, `turno_trabalho`, `status_disponibilidade`, `#id_secretaria`)
+6. **equipe_manutencao**(<u>*id_equipe*</u>, #id_secretaria, nome_equipe, categoria_problema_atendida, turno_trabalho, status_disponibilidade)
    * **PK:** `id_equipe`
    * **FK:** `#id_secretaria` referencia `secretaria_orgao(id_secretaria)`
 
-7. **`funcionario`** (`matricula_funcionario` [PK], `cpf`, `nome_funcionario`, `cargo_funcao`, `data_admissao`, `telefone_corporativo`, `#id_equipe`)
+7. **funcionario**(<u>*matricula_funcionario*</u>, #id_equipe, cpf, nome_funcionario, cargo_funcao, data_admissao, telefone_corporativo)
    * **PK:** `matricula_funcionario`
    * **FK:** `#id_equipe` referencia `equipe_manutencao(id_equipe)`
 
-8. **`veiculo_frota`** (`placa_veiculo` [PK], `tipo_veiculo`, `modelo`, `ano`, `capacidade_carga`, `status_manutencao`, `#id_secretaria`)
+8. **veiculo_frota**(<u>*placa_veiculo*</u>, #id_secretaria, tipo_veiculo, modelo, ano, capacidade_carga, status_manutencao)
    * **PK:** `placa_veiculo`
    * **FK:** `#id_secretaria` referencia `secretaria_orgao(id_secretaria)`
 
-9. **`ordem_servico`** (`id_os` [PK], `data_emissao`, `data_inicio_execucao`, `data_conclusao`, `relatorio_tecnico`, `custo_mao_de_obra`, `status_os`, `#id_ocorrencia`, `#id_equipe`, `#placa_veiculo`)
+9. **ordem_servico**(<u>*id_os*</u>, #id_ocorrencia, #id_equipe, #placa_veiculo, data_emissao, data_inicio_execucao, data_conclusao, relatorio_tecnico, custo_mao_de_obra, status_os)
    * **PK:** `id_os`
    * **FK:** `#id_ocorrencia` referencia `ocorrencia(id_ocorrencia)`
    * **FK:** `#id_equipe` referencia `equipe_manutencao(id_equipe)`
    * **FK:** `#placa_veiculo` referencia `veiculo_frota(placa_veiculo)`
 
-10. **`material_insumo`** (`id_material` [PK], `nome_material`, `unidade_medida`, `quantidade_estoque_atual`, `custo_unitario_medio`)
+10. **material_insumo**(<u>*id_material*</u>, nome_material, unidade_medida, quantidade_estoque_atual, custo_unitario_medio)
     * **PK:** `id_material`
 
-11. **`fornecedor`** (`id_fornecedor` [PK], `cnpj`, `razao_social`, `telefone`, `email_comercial`, `cidade_sede`)
+11. **fornecedor**(<u>*id_fornecedor*</u>, cnpj, razao_social, telefone, email_comercial, cidade_sede)
     * **PK:** `id_fornecedor`
 
-12. **`avaliacao_atendimento`** (`id_avaliacao` [PK], `nota_satisfacao`, `comentario_cidadao`, `problema_resolvido_boolean`, `data_avaliacao`, `#id_os`, `#id_cidadao`)
+12. **avaliacao_atendimento**(<u>*id_avaliacao*</u>, #id_os, #id_cidadao, nota_satisfacao, comentario_cidadao, problema_resolvido_boolean, data_avaliacao)
     * **PK:** `id_avaliacao`
     * **FK:** `#id_os` referencia `ordem_servico(id_os)` *(Restrição `UNIQUE` aplicada para garantir cardinalidade 1:1)*
     * **FK:** `#id_cidadao` referencia `cidadao(id_cidadao)`
 
 #### B. Tabelas Associativas Originadas de Relacionamentos N:M
 
-13. **`consumo_material_os`** (`#id_os` [PK], `#id_material` [PK], `quantidade_utilizada`, `data_baixa_estoque`)
+13. **consumo_material_os**(<u>*#id_os*</u>, <u>*#id_material*</u>, quantidade_utilizada, data_baixa_estoque)
     * *Origem:* Mapeamento do relacionamento N:M `consome` entre `ordem_servico` e `material_insumo`.
     * **PK Composta:** (`#id_os`, `#id_material`)
     * **FK:** `#id_os` referencia `ordem_servico(id_os)`
     * **FK:** `#id_material` referencia `material_insumo(id_material)`
 
-14. **`fornecimento_insumo`** (`#id_fornecedor` [PK], `#id_material` [PK], `numero_lote_compra` [PK], `data_entrega`, `quantidade_comprada`, `preco_unitario_compra`)
+14. **fornecimento_insumo**(<u>*#id_fornecedor*</u>, <u>*#id_material*</u>, <u>*numero_lote_compra*</u>, data_entrega, quantidade_comprada, preco_unitario_compra)
     * *Origem:* Mapeamento do relacionamento N:M `fornece` entre `fornecedor` e `material_insumo`.
     * **PK Composta:** (`#id_fornecedor`, `#id_material`, `numero_lote_compra`)
     * **FK:** `#id_fornecedor` referencia `fornecedor(id_fornecedor)`
     * **FK:** `#id_material` referencia `material_insumo(id_material)`
+

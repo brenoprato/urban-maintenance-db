@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl{\f0 Arial;}}
+\f0\fs22
+{\b Modelo L\'f3gico Relacional}\par
+\par
+{\i Conven\'e7\'e3o:} {\b tabela}({\ul chave_primaria}, #chave_estrangeira, atributo_1, atributo_2, ...)\par
+\par
+1. {\b regiao_cep}({\ul cep}, cidade, bairro, logradouro, ponto_referencia_regiao)\par
+\par
+2. {\b cidadao}({\ul id_cidadao}, #cep_moradia, cpf, nome_completo, email, telefone, numero_residencia)\par
+   - #cep_moradia referencia regiao_cep(cep)\par
+\par
+3. {\b ocorrencia}({\ul id_ocorrencia}, #id_cidadao, #cep_ocorrencia, protocolo, titulo, descricao_detalhada, categoria_problema, nivel_gravidade, data_abertura, status_atual, numero_aproximado)\par
+   - #id_cidadao referencia cidadao(id_cidadao)\par
+   - #cep_ocorrencia referencia regiao_cep(cep)\par
+\par
+4. {\b anexo_midia}({\ul id_anexo}, #id_ocorrencia, url_arquivo, tipo_midia, data_upload)\par
+   - #id_ocorrencia referencia ocorrencia(id_ocorrencia)\par
+\par
+5. {\b secretaria_orgao}({\ul id_secretaria}, nome_secretaria, sigla, nome_secretario_responsavel, telefone_contato, orcamento_mensal)\par
+\par
+6. {\b equipe_manutencao}({\ul id_equipe}, #id_secretaria, nome_equipe, categoria_problema_atendida, turno_trabalho, status_disponibilidade)\par
+   - #id_secretaria referencia secretaria_orgao(id_secretaria)\par
+\par
+7. {\b funcionario}({\ul matricula_funcionario}, #id_equipe, cpf, nome_funcionario, cargo_funcao, data_admissao, telefone_corporativo)\par
+   - #id_equipe referencia equipe_manutencao(id_equipe)\par
+\par
+8. {\b veiculo_frota}({\ul placa_veiculo}, #id_secretaria, tipo_veiculo, modelo, ano, capacidade_carga, status_manutencao)\par
+   - #id_secretaria referencia secretaria_orgao(id_secretaria)\par
+\par
+9. {\b ordem_servico}({\ul id_os}, #id_ocorrencia, #id_equipe, #placa_veiculo, data_emissao, data_inicio_execucao, data_conclusao, relatorio_tecnico, custo_mao_de_obra, status_os)\par
+   - #id_ocorrencia referencia ocorrencia(id_ocorrencia)\par
+   - #id_equipe referencia equipe_manutencao(id_equipe)\par
+   - #placa_veiculo referencia veiculo_frota(placa_veiculo)\par
+\par
+10. {\b material_insumo}({\ul id_material}, nome_material, unidade_medida, quantidade_estoque_atual, custo_unitario_medio)\par
+\par
+11. {\b fornecedor}({\ul id_fornecedor}, cnpj, razao_social, telefone, email_comercial, cidade_sede)\par
+\par
+12. {\b avaliacao_atendimento}({\ul id_avaliacao}, #id_os, #id_cidadao, nota_satisfacao, comentario_cidadao, problema_resolvido_boolean, data_avaliacao)\par
+    - #id_os referencia ordem_servico(id_os) [UNIQUE]\par
+    - #id_cidadao referencia cidadao(id_cidadao)\par
+\par
+13. {\b consumo_material_os}({\ul #id_os}, {\ul #id_material}, quantidade_utilizada, data_baixa_estoque)\par
+    - #id_os referencia ordem_servico(id_os)\par
+    - #id_material referencia material_insumo(id_material)\par
+\par
+14. {\b fornecimento_insumo}({\ul #id_fornecedor}, {\ul #id_material}, {\ul numero_lote_compra}, data_entrega, quantidade_comprada, preco_unitario_compra)\par
+    - #id_fornecedor referencia fornecedor(id_fornecedor)\par
+    - #id_material referencia material_insumo(id_material)\par
+}

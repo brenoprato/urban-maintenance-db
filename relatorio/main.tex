@@ -1,164 +1,137 @@
-% =============================================================================
-% RELATÓRIO TÉCNICO-ACADÊMICO — ETAPA 1 (DISCIPLINA DE BANCO DE DADOS)
-% Padrão ABNT (abntex2 + abntex2cite [alf]) — Compatível com TeX Live e Overleaf
-% =============================================================================
-\documentclass[
-    12pt,
-    openany,
-    oneside,
-    a4paper,
-    english,
-    brazil
-]{abntex2}
+\documentclass[12pt,a4paper]{article}
 
-% --- Pacotes de codificação, fontes e tipografia ---
-\usepackage{cmap}
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
 \usepackage{lmodern}
-\usepackage{indentfirst}
 \usepackage{microtype}
+\usepackage[top=2.2cm,bottom=2.2cm,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
 
-% --- Pacotes gráficos, tabelas e citações ---
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{xcolor}
-\usepackage{csquotes}
-\usepackage{hyperref}
-\usepackage[alf,abnt-emphasize=bf]{abntex2cite}
+\setstretch{1.12}
+\setlength{\emergencystretch}{3em}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.5em}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.6em}
 
-% --- Tipos de coluna alinhados à esquerda/direita sem hifenização forçada ---
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
-
-% --- Configuração de margens ABNT (NBR 14724): sup/esq 3 cm; inf/dir 2 cm ---
-\setlrmarginsandblock{3cm}{2cm}{*}
-\setulmarginsandblock{3cm}{2cm}{*}
-\checkandfixthelayout
-
-% --- Espaçamento de parágrafos, seções e indentação ABNT ---
-\setlength{\parindent}{1.25cm}
-\setlength{\parskip}{0pt}
-\setlength{\afterchapskip}{18pt}
-\setlength{\beforesecskip}{14pt}
-\setlength{\aftersecskip}{8pt}
-\setlength{\beforesubsecskip}{10pt}
-\setlength{\aftersubsecskip}{6pt}
-
-% --- Dados do grupo, disciplina e instituição ---
 \input{dados-grupo}
 
-\titulo{\tituloTrabalho}
-\autor{\integrantes}
-\local{\cidadeLocal}
-\data{\anoTrabalho}
-\instituicao{%
-  \instituicaoNome
-  \par
-  \cursoNome
-  \par
-  Disciplina: \disciplinaNome
-}
-\orientador[Professor(a):]{\professorNome}
-\preambulo{Trabalho acadêmico apresentado à disciplina de \disciplinaNome{} do curso de \cursoNome{} da \instituicaoNome{}, como requisito parcial de avaliação da Etapa 1 (Descrição do Problema e Enquadramento nos Objetivos de Desenvolvimento Sustentável).}
-
-% --- Customização da Capa ABNT (NBR 14724) para incluir Instituição no topo ---
-\renewcommand{\imprimircapa}{%
-  \begin{capa}%
-    \center
-    {\ABNTEXchapterfont\large\imprimirinstituicao}
-    \vspace*{1.5cm}
-
-    {\ABNTEXchapterfont\large\imprimirautor}
-
-    \vfill
-    \begin{center}
-    \ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo
-    \end{center}
-    \vfill
-
-    \large\imprimirlocal
-
-    \large\imprimirdata
-
-    \vspace*{1cm}
-  \end{capa}
-}
-
-% --- Configurações do pacote hyperref (PDF/Metadados) ---
-\definecolor{blueLink}{RGB}{0,51,102}
-\makeatletter
-\hypersetup{
-    pdftitle={\tituloTrabalho},
-    pdfauthor={Grupo - Disciplina de Banco de Dados},
-    pdfsubject={Monitoramento e Manutenção Colaborativa de Infraestrutura Urbana (ODS 11)},
-    pdfkeywords={Infraestrutura urbana, Zeladoria municipal, Banco de dados relacional, ODS 11, Agenda 2030},
-    colorlinks=true,
-    linkcolor=black,
-    citecolor=black,
-    filecolor=black,
-    urlcolor=blueLink,
-    bookmarksdepth=4
-}
-\makeatother
-
-% =============================================================================
-% INÍCIO DO DOCUMENTO
-% =============================================================================
 \begin{document}
 
-\selectlanguage{brazil}
-\frenchspacing
+% ==============================================================================
+% CABEÇALHO PADRÃO UNIFESP / ICT
+% ==============================================================================
+\begin{center}
+  {\large\textbf{\instituicaoNome}}\\[2pt]
+  {\large\textbf{\institutoNome}}\\[2pt]
+  {\normalsize Disciplina: \disciplinaNome}\\[2pt]
+  {\normalsize Professora: \professorNome}\\[8pt]
+  \rule{\textwidth}{0.6pt}\\[10pt]
+  {\Large\textbf{Trabalho de Banco de Dados --- Etapa 1}}\\[4pt]
+  {\large\textbf{\tituloTrabalho}}\\[8pt]
+  {\normalsize\textbf{Integrantes do Grupo:}}\\[3pt]
+  {\normalsize \integrantes}\\[5pt]
+  {\small Data de Entrega: \dataEntrega}
+  \\[5pt]
+  \rule{\textwidth}{0.6pt}
+\end{center}
 
-% -----------------------------------------------------------------------------
-% ELEMENTOS PRÉ-TEXTUAIS
-% -----------------------------------------------------------------------------
-\pretextual
+\vspace{0.1cm}
 
-% Capa (sem conflito de âncora hyperref page.1 com a folha de rosto)
-\hypersetup{pageanchor=false}
-\imprimircapa
-\hypersetup{pageanchor=true}
+% ==============================================================================
+% 1. DESCRIÇÃO DO PROBLEMA
+% ==============================================================================
+\section{Descrição do Problema}
 
-% Folha de rosto (início da contagem de páginas ABNT NBR 14724)
-\imprimirfolhaderosto*
+A manutenção contínua da infraestrutura urbana --- conhecida na administração pública como \textbf{zeladoria urbana} --- é um dos desafios cotidianos mais críticos enfrentados pelos municípios brasileiros. Segundo o Censo Demográfico 2022 do Instituto Brasileiro de Geografia e Estatística (IBGE), 87,4\% da população brasileira (cerca de 177,5 milhões de pessoas) vive em áreas urbanas \cite{ibge2025entorno}. Nesse ambiente, o desgaste natural pelo uso intenso, somado a eventos climáticos severos, provoca diariamente problemas na malha pública, tais como buracos no asfalto, lâmpadas queimadas na iluminação pública, bueiros e bocas de lobo obstruídos, calçadas quebradas, acúmulo irregular de entulho e árvores com risco de queda. Dados da Pesquisa Urbanística do Entorno dos Domicílios do Censo 2022 \cite{ibge2025entorno} mostram que cerca de 80,6 milhões de moradores urbanos vivem em vias sem bueiro ou boca de lobo, 20,1 milhões residem em ruas sem pavimentação adequada e 55,9 milhões enfrentam calçadas com obstáculos ou degradação.
 
-% Resumo em língua vernácula (Português) e língua estrangeira (Inglês)
-\input{pre-textuais/resumo}
-\input{pre-textuais/abstract}
+Na maioria das prefeituras brasileiras, o tratamento dessas demandas sofre com uma grave \textbf{fragmentação de dados e processos}. Quando existe um canal de ouvidoria ou atendimento ao cidadão (como portais e aplicativos ``156''), ele geralmente funciona apenas como uma caixa de entrada de reclamações isolada da rotina operacional das secretarias municipais de obras, serviços urbanos e meio ambiente. Na prática, isso gera cinco problemas centrais:
 
-% Lista de ilustrações (figuras)
-\pdfbookmark[0]{\listfigurename}{lof}
-\listoffigures*
-\newpage
+\begin{enumerate}
+  \item \textbf{Falta de padronização de endereçamento e perda de evidências:} relatos chegam por telefone, redes sociais ou formulários simples sem validação estruturada de região de CEP (logradouro, bairro, cidade e ponto de referência da região), número aproximado no logradouro e anexos de mídia (fotos ou vídeos) que permitam avaliar a gravidade real do problema antes do deslocamento de uma equipe;
+  \item \textbf{Desconexão entre o chamado do cidadão e a execução em campo:} após o registro do protocolo, o encaminhamento para as secretarias e equipes de manutenção frequentemente ocorre por planilhas avulsas ou ordens em papel, perdendo-se o vínculo direto entre a ocorrência aberta pelo morador e a Ordem de Serviço (OS) executada pela prefeitura;
+  \item \textbf{Dificuldade na alocação de equipes, funcionários e frota:} gestores públicos têm pouca visibilidade integrada sobre quais equipes técnicas (por categoria de problema atendida e turno de trabalho), funcionários e veículos da frota municipal estão disponíveis ou em manutenção para atender ocorrências prioritárias;
+  \item \textbf{Ausência de controle de materiais e compras por lote:} o consumo de insumos de almoxarifado (massa asfáltica, luminárias LED, grelhas de concreto, cimento) raramente é vinculado a cada Ordem de Serviço concluída, dificultando a auditoria de custos, o controle da quantidade em estoque atual e a rastreabilidade dos lotes de compra entregues por fornecedores;
+  \item \textbf{Baixa transparência e falta de avaliação pelo cidadão:} o morador que reportou o problema muitas vezes não consegue acompanhar o status atual do reparo nem registrar sua avaliação de satisfação após a conclusão da Ordem de Serviço.
+\end{enumerate}
 
-% Lista de tabelas
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
-\newpage
+Para solucionar esse problema da sociedade --- com forte potencial de aplicação em projetos de extensão universitária do ICT/UNIFESP junto a prefeituras da região ---, este trabalho propõe o projeto de um banco de dados relacional \cite{elmasri2019} para um \textbf{Sistema de Monitoramento e Manutenção Colaborativa de Infraestrutura Urbana}. O sistema integra, em uma base única, a participação cidadã (abertura de ocorrências vinculadas à malha de CEPs, envio de anexos de mídia e avaliação final do atendimento) e a gestão operacional municipal (secretarias, equipes, funcionários, veículos da frota, ordens de serviço, consumo de materiais do almoxarifado e fornecimento de insumos por lote).
 
-% Sumário
-\pdfbookmark[0]{\contentsname}{toc}
-\tableofcontents*
-\newpage
+% ==============================================================================
+% 2. ENQUADRAMENTO NOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL (ODS)
+% ==============================================================================
+\section{Enquadramento nos Objetivos de Desenvolvimento Sustentável (ODS)}
 
-% -----------------------------------------------------------------------------
-% ELEMENTOS TEXTUAIS
-% -----------------------------------------------------------------------------
-\textual
+O domínio escolhido enquadra-se diretamente na Agenda 2030 da Organização das Nações Unidas (ONU), tendo como foco principal o \textbf{ODS 11 --- Cidades e Comunidades Sustentáveis} (\emph{``Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis''}, disponível em \url{https://brasil.un.org/pt-br/sdgs/11}) \cite{onubrasil2015ods11}. O sistema proposto contribui diretamente para três metas do ODS 11:
 
-\input{capitulos/01-introducao}
-\input{capitulos/02-problema}
-\input{capitulos/03-ods}
-\input{capitulos/04-escopo-sistema}
-\input{capitulos/05-consideracoes-finais}
+\begin{itemize}
+  \item \textbf{Meta 11.3 (Planejamento e Gestão Urbana Participativa):} visa aumentar a urbanização inclusiva e sustentável e a capacidade para o planejamento e a gestão participativa, integrada e sustentável dos assentamentos humanos. O sistema atende a essa meta ao transformar o cidadão em agente ativo da zeladoria municipal: cada morador registra ocorrências da sua rua ou bairro, acompanha o status do atendimento e avalia formalmente se o serviço executado pela prefeitura resolveu o problema;
+  \item \textbf{Meta 11.6 (Redução do Impacto Ambiental das Cidades):} busca reduzir o impacto ambiental negativo \emph{per capita} das cidades, prestando especial atenção à gestão de resíduos municipais. O banco de dados apoia essa meta ao estruturar o atendimento rápido a pontos de descarte irregular de lixo e entulho e à desobstrução preventiva de bueiros e galerias pluviais, reduzindo alagamentos e contaminação urbana;
+  \item \textbf{Meta 11.7 (Acesso Universal a Espaços Públicos Seguros e Acessíveis):} visa proporcionar o acesso universal a espaços públicos seguros, inclusivos, acessíveis e verdes, em particular para mulheres, crianças, pessoas idosas e pessoas com deficiência. A manutenção ágil da iluminação pública, o conserto de calçadas e rampas de acessibilidade e a conservação de vias e áreas verdes impactam diretamente a segurança viária e a mobilidade de pedestres.
+\end{itemize}
 
-% -----------------------------------------------------------------------------
-% ELEMENTOS PÓS-TEXTUAIS
-% -----------------------------------------------------------------------------
-\postextual
+De forma complementar, o projeto também apoia dois outros objetivos da ONU:
+\begin{itemize}
+  \item \textbf{ODS 9 --- Indústria, Inovação e Infraestrutura (Meta 9.1):} ao estruturar a manutenção preventiva e corretiva da infraestrutura viária, elétrica e de drenagem municipal com controle técnico de equipes, veículos e insumos;
+  \item \textbf{ODS 16 --- Paz, Justiça e Instituições Eficazes (Metas 16.6 e 16.7):} ao promover instituições públicas mais eficazes, responsáveis e transparentes, garantindo rastreabilidade sobre custos de mão de obra, consumo de materiais do almoxarifado, compras de fornecedores e avaliação pública dos serviços prestados.
+\end{itemize}
 
-\bibliography{referencias}
+% ==============================================================================
+% 3. FUNCIONAMENTO DO SISTEMA E REGRAS DE NEGÓCIO (BASE PARA O MODELO ER)
+% ==============================================================================
+\section{Funcionamento do Sistema e Regras de Negócio}
+
+Para atender integralmente ao domínio descrito e fundamentar a construção do Modelo Entidade-Relacionamento (MER) na Etapa 2, o banco de dados do sistema é estruturado em \textbf{12 entidades principais} (totalizando 70 atributos de entidades), \textbf{14 relacionamentos binários} (com 6 atributos próprios de relacionamento) e suas regras de cardinalidade, organizados em três núcleos operacionais:
+
+\subsection{Demandas do Cidadão, Base Geográfica e Avaliação}
+
+\begin{enumerate}
+  \item \textbf{Região de CEP (\texttt{regiao\_cep}):} armazena a base padronizada de endereçamento do município, possuindo 5 atributos: \texttt{cep} (chave primária), \texttt{cidade}, \texttt{bairro}, \texttt{logradouro} e \texttt{ponto\_referencia\_regiao}. Essa entidade padroniza tanto o endereço residencial dos cidadãos quanto a localização geográfica das ocorrências urbanas;
+  \item \textbf{Cidadão (\texttt{cidadao}):} representa o morador cadastrado na plataforma colaborativa, com 6 atributos próprios: \texttt{id\_cidadao} (chave primária), \texttt{cpf} único, \texttt{nome\_completo}, \texttt{email} único, \texttt{telefone} e \texttt{numero\_residencia}. Relaciona-se com Região de CEP por meio do relacionamento \textbf{\texttt{endereco\_moradia}} (\textbf{1 Região de CEP pode conter vários Cidadãos, e cada Cidadão reside em um único CEP --- 1:N});
+  \item \textbf{Ocorrência (\texttt{ocorrencia}):} é o registro central do problema urbano relatado no espaço público, possuindo 9 atributos próprios: \texttt{id\_ocorrencia} (chave primária), número de \texttt{protocolo} único, \texttt{titulo}, \texttt{descricao\_detalhada}, \texttt{categoria\_problema} (ex.: buraco na via, iluminação pública, bueiro entupido, calçada quebrada, entulho, poda de árvore), \texttt{nivel\_gravidade} (escala de 1 a 5), \texttt{data\_abertura}, \texttt{status\_atual} (Aberta, Em Análise, Em Atendimento, Concluída ou Cancelada) e \texttt{numero\_aproximado} no logradouro. Cada ocorrência é aberta obrigatoriamente por um único cidadão pelo relacionamento \textbf{\texttt{reporta}} (\textbf{1 Cidadão para N Ocorrências --- 1:N}) e está localizada em um único CEP pelo relacionamento \textbf{\texttt{local\_do\_problema}} (\textbf{1 Região de CEP para N Ocorrências --- 1:N});
+  \item \textbf{Anexo de Mídia (\texttt{anexo\_midia}):} armazena as evidências digitais (fotos ou vídeos) enviadas para comprovar o problema, contendo 4 atributos próprios: \texttt{id\_anexo} (chave primária), \texttt{url\_arquivo}, \texttt{tipo\_midia} e \texttt{data\_upload}. Cada anexo pertence exclusivamente a uma ocorrência por meio do relacionamento \textbf{\texttt{possui}} (\textbf{1 Ocorrência pode possuir vários Anexos de Mídia --- 1:N});
+  \item \textbf{Avaliação de Atendimento (\texttt{avaliacao\_atendimento}):} permite ao cidadão avaliar o serviço público após a conclusão do reparo, registrando 5 atributos próprios: \texttt{id\_avaliacao} (chave primária), \texttt{nota\_satisfacao} (de 1 a 5), \texttt{comentario\_cidadao}, indicador booleano \texttt{problema\_resolvido\_boolean} e \texttt{data\_avaliacao}. Cada avaliação é realizada por um único cidadão pelo relacionamento \textbf{\texttt{registra\_avaliacao}} (\textbf{1 Cidadão pode registrar várias Avaliações --- 1:N}) e refere-se a uma única Ordem de Serviço concluída pelo relacionamento \textbf{\texttt{recebe}}, sendo que cada Ordem de Serviço pode receber no máximo uma avaliação (\textbf{relação 1:1 entre Ordem de Serviço e Avaliação de Atendimento}).
+\end{enumerate}
+
+\subsection{Estrutura Administrativa, Equipes, Funcionários e Frota}
+
+\begin{enumerate}[resume]
+  \item \textbf{Secretaria ou Órgão Municipal (\texttt{secretaria\_orgao}):} representa as pastas da prefeitura responsáveis pela zeladoria urbana, contendo 6 atributos próprios: \texttt{id\_secretaria} (chave primária), \texttt{nome\_secretaria} único, \texttt{sigla} única, \texttt{nome\_\allowbreak secretario\_\allowbreak responsavel}, \texttt{telefone\_contato} e \texttt{orcamento\_mensal};
+  \item \textbf{Equipe de Manutenção (\texttt{equipe\_manutencao}):} representa os grupos operacionais de campo subordinados a uma secretaria por meio do relacionamento \textbf{\texttt{coordena}} (\textbf{1 Secretaria coordena várias Equipes de Manutenção --- 1:N}). Possui 5 atributos próprios: \texttt{id\_equipe} (chave primária), \texttt{nome\_equipe} único, \texttt{categoria\_\allowbreak problema\_atendida}, \texttt{turno\_trabalho} e \texttt{status\_disponibilidade};
+  \item \textbf{Funcionário (\texttt{funcionario}):} armazena os servidores e técnicos municipais alocados nas equipes de manutenção pelo relacionamento \textbf{\texttt{e\_composta\_por}} (\textbf{1 Equipe de Manutenção é composta por vários Funcionários, e cada Funcionário está alocado em uma única Equipe --- 1:N}). Possui 6 atributos próprios: \texttt{matricula\_funcionario} (chave primária), \texttt{cpf} único, \texttt{nome\_funcionario}, \texttt{cargo\_funcao}, \texttt{data\_admissao} e \texttt{telefone\_\allowbreak corporativo};
+  \item \textbf{Veículo da Frota (\texttt{veiculo\_frota}):} representa os veículos utilitários e máquinas mantidos por uma secretaria por meio do relacionamento \textbf{\texttt{mantem\_frota}} (\textbf{1 Secretaria mantém vários Veículos da Frota --- 1:N}). Possui 6 atributos próprios: \texttt{placa\_veiculo} (chave primária), \texttt{tipo\_veiculo}, \texttt{modelo}, \texttt{ano}, \texttt{capacidade\_carga} e \texttt{status\_manutencao}.
+\end{enumerate}
+
+\subsection{Execução de Ordens de Serviço, Almoxarifado e Fornecedores}
+
+\begin{enumerate}[resume]
+  \item \textbf{Ordem de Serviço (\texttt{ordem\_servico}):} formaliza a intervenção técnica de campo para solucionar o problema relatado. Possui 7 atributos próprios: \texttt{id\_os} (chave primária), \texttt{data\_emissao}, \texttt{data\_inicio\_execucao}, \texttt{data\_conclusao}, \texttt{relatorio\_tecnico}, \texttt{custo\_mao\_de\_obra} e \texttt{status\_os}. Cada Ordem de Serviço articula três vínculos operacionais:
+  \begin{itemize}
+    \item é gerada a partir de uma única Ocorrência pelo relacionamento \textbf{\texttt{gera}}, sendo que uma ocorrência complexa pode demandar mais de uma OS (\textbf{1 Ocorrência para N Ordens de Serviço --- 1:N});
+    \item é atribuída a uma única Equipe de Manutenção pelo relacionamento \textbf{\texttt{executa}} (\textbf{1 Equipe executa várias Ordens de Serviço --- 1:N});
+    \item utiliza um único Veículo da Frota em seu deslocamento pelo relacionamento \textbf{\texttt{desloca\_para}} (\textbf{1 Veículo é deslocado para várias Ordens de Serviço ao longo do tempo --- 1:N}).
+  \end{itemize}
+  \item \textbf{Material ou Insumo (\texttt{material\_insumo}):} catálogo de materiais do almoxarifado municipal utilizados nos reparos urbanos, com 5 atributos próprios: \texttt{id\_material} (chave primária), \texttt{nome\_material} único, \texttt{unidade\_medida}, \texttt{quantidade\_estoque\_atual} e \texttt{custo\_unitario\_medio}. O relacionamento \textbf{\texttt{consome}} entre \textbf{Ordem de Serviço e Material} possui cardinalidade \textbf{N:M} (mapeado no modelo relacional para a tabela associativa \texttt{consumo\_material\_os}), registrando como atributos próprios a \texttt{quantidade\_utilizada} e a \texttt{data\_baixa\_estoque};
+  \item \textbf{Fornecedor (\texttt{fornecedor}):} empresas contratadas pela prefeitura para o suprimento de insumos, com 6 atributos próprios: \texttt{id\_fornecedor} (chave primária), \texttt{cnpj} único, \texttt{razao\_social}, \texttt{telefone}, \texttt{email\_comercial} e \texttt{cidade\_sede}. O relacionamento \textbf{\texttt{fornece}} entre \textbf{Fornecedor e Material} possui cardinalidade \textbf{N:M} (mapeado no modelo relacional para a tabela associativa \texttt{fornecimento\_insumo}), registrando como atributos próprios o \texttt{numero\_lote\_compra} (identificador do lote entregue), a \texttt{data\_entrega}, a \texttt{quantidade\_comprada} e o \texttt{preco\_unitario\_compra}.
+\end{enumerate}
+
+% ==============================================================================
+% REFERÊNCIAS
+% ==============================================================================
+\begin{thebibliography}{9}
+
+\bibitem{onubrasil2015ods11}
+NAÇÕES UNIDAS BRASIL. \textbf{Objetivos de Desenvolvimento Sustentável --- ODS 11: Cidades e comunidades sustentáveis}. Brasília, DF: ONU Brasil, 2015. Disponível em: \url{https://brasil.un.org/pt-br/sdgs/11}. Acesso em: 19 out. 2026.
+
+\bibitem{ibge2025entorno}
+INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE). \textbf{Censo Demográfico 2022: Características Urbanísticas do Entorno dos Domicílios}. Rio de Janeiro: IBGE, 2025. Disponível em: \url{https://www.ibge.gov.br/estatisticas/sociais/populacao/22827-censo-demografico-2022.html}. Acesso em: 19 out. 2026.
+
+\bibitem{elmasri2019}
+ELMASRI, R.; NAVATHE, S. B. \textbf{Sistemas de Banco de Dados}. 7. ed. São Paulo: Pearson Education do Brasil, 2019.
+
+\end{thebibliography}
 
 \end{document}
